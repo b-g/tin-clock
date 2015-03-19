@@ -54,7 +54,6 @@ app.get('/trends/place/:woeid', function(req, res) {
 app.get('/show/trends/place/:woeid', function(req, res) {
 	var woeid = req.params.woeid;
 	client.get('trends/place.json', {id: woeid}, function(error, trends, response){
-		console.log(error)
 		if(error) return handleError(error, req, res, 404, "404 Not Found");
 		res.render(
 			'trend-place.jade',
