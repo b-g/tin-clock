@@ -1,0 +1,19 @@
+html
+	head
+		title trends/place
+	body
+		h1 trends/place
+		p: a(href="https://dev.twitter.com/rest/reference/get/trends/place") dev.twitter.com/rest/reference/get/trends/place
+		p Returns the top 10 trending topics for a specific WOEID, if trending information is available for it.
+		p This information is cached for 5 minutes. Requesting more frequently than that will not return any more data, and will count against your rate limit usage.
+		h2= name
+		h2= as_of
+		h2 trends
+		table
+			tr
+				th #Hash
+				th Url
+			for trend in trends
+				tr
+					td= trends.name
+					td: a(href="#{trends.url}") #{trends.url}

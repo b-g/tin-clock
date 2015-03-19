@@ -1,0 +1,17 @@
+html
+	head
+		title trends/available
+	body
+		h1 trends/available
+		p: a(href="https://dev.twitter.com/rest/reference/get/trends/available") dev.twitter.com/rest/reference/get/trends/available
+		p Returns the locations that Twitter has trending topic information for.
+		table
+			tr
+				th Name
+				th Country
+				th Link
+			for place in places
+				tr
+					td= place.name
+					td= place.country
+					td: a(href="/show/trends/place/#{place.woeid}") #{place.woeid}

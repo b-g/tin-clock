@@ -1,0 +1,26 @@
+{
+  "name": "tin-clock",
+  "version": "1.0.0",
+  "description": "TIN CLock",
+  "contributors": [
+    "Benedikt Groß <b-g> (http://benedikt-gross.de/)",
+    "Koby Barhad (http://www.kn-studio.com/)"
+  ],
+  "dependencies": {
+    "express": "4.10.7",
+    "underscore": "1.7.0",
+    "twitter": "1.2.5",
+    "jade": "~1.9.2"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b-g/tin-clock.git"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "private": true
+}
